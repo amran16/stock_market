@@ -1,0 +1,26 @@
+
+.search{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+   
+  }
+
+.chart{
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+ } 
+
+ form{
+  width: 31%; 
+  margin:25px auto
+ }
+
+ input{
+  text-align: center;
+ }
+
+.ui.bottom:hover{
+  color: red;
+}
+
