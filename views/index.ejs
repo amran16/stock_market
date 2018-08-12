@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
         <title>Stoch Chart App</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
-        <link rel="stylesheet" href="/stylesheet/index.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
-        <script src="https://code.highcharts.com/stock/highstock.js"></script>
-        <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css'>
+        <link rel='stylesheet' href='/stylesheet/index.css'>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js'></script>
+        <script src='https://code.highcharts.com/stock/highstock.js'></script>
+        <script src='https://code.highcharts.com/stock/modules/exporting.js'></script>
     </head>
     <body>
 
       <div class='ui container search'>
         <h1 class='ui header blue center aligned'>Stock Market</h1>
-        <div id="container" class="chart" style="width:100%; height:400px;"></div>
+        <div id='container' class='chart' style='width:100%; height:400px;'></div>
         <form class='ui form' action='/' method='POST'>
             <div class='field'>
               <h4 class='ui header blue center aligned'>Search Stock Symbols</h4>
                 <input type='text' name='stockname' placeholder='twtr, aapl, goog, fb'>
             </div>
-            <button class="fluid ui blue button" type="submit">Add Stock</button>
+            <button class='fluid ui blue button' type='submit'>Add Stock</button>
         </form>
         <% stocks.map(function(stock){ %>
-        <div class="">
-         <div class="">
-        <div class="ui centered cards">
-            <div class="card">
-              <div class="content">
-                <div class="header"> <%= stock.stockSymbol %></div>
+        <div class=''>
+         <div class=''>
+        <div class='ui centered cards'>
+            <div class='card'>
+              <div class='content'>
+                <div class='header'> <%= stock.stockSymbol %></div>
               </div>
-              <a href='stocks/<%= stock._id %>' class="ui bottom attached button">
-                <i class="cut icon"></i>
+              <a href='stocks/<%= stock._id %>' class='ui bottom attached button'>
+                <i class='cut icon'></i>
                    Delete
               </a>
             </div>
